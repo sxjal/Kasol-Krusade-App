@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037305692644",
+    "project_id": "kasol-krusade",
+    "storage_bucket": "kasol-krusade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037305692644:android:84bbcaf0bd9afe007787f1",
+        "android_client_info": {
+          "package_name": "com.example.kasolkrusade"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRbJ-g1XYvPjBG_lnN7OnRa1B5RIk5N6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

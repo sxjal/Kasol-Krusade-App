@@ -29,6 +29,7 @@ class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _LoginScreenState createState() => _LoginScreenState();
 }
 
@@ -37,10 +38,12 @@ class _LoginScreenState extends State<LoginScreen> {
   String email = '';
   String password = '';
   bool hidden = true;
+  bool isloading = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(1, 39, 122, 166), //Colors.white,
+      backgroundColor: const Color.fromARGB(1, 39, 122, 166), //Colors.white,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -109,6 +112,9 @@ class _LoginScreenState extends State<LoginScreen> {
             const SizedBox(height: 20.0),
             GestureDetector(
               onTap: () async {
+                setState(() {
+                  isloading = true;
+                });
                 if (email == null || email.isEmpty) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(content: Text('Please enter an email')),
@@ -144,7 +150,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       context,
                       MaterialPageRoute(builder: (context) => MainScreen()),
                     );
-                 
                   }
                 } catch (e) {
                   ScaffoldMessenger.of(context).showSnackBar(
@@ -154,11 +159,11 @@ class _LoginScreenState extends State<LoginScreen> {
               },
               child: Container(
                 color: Colors.white,
-                height: MediaQuery.of(context).size.height * .05,
+                // height: MediaQuery.of(context).size.height * .05,
                 padding: const EdgeInsets.all(10),
-                child: const Text(
-                  "Login",
-                ),
+                child: !isloading
+                    ? const Text("Login")
+                    : const CircularProgressIndicator(),
               ),
             ),
           ],

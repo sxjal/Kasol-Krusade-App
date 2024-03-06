@@ -1,13 +1,48 @@
 [
     
     {
-        "question":"Questions goes here",
-        "answer":"Answer to ques1 goes here"
+        "question":"Is the Booking Amount refundable?",
+        "answer":"No, The booking amount is not refundable. In case of cancellations, charges would be levied."
     },
     {
-        "question":"Questions goes here",
-        "answer":"Answer to ques1 goes here"
+        "question":"Will alcohol be served?",
+        "answer":"No, alcohol will not be served on the trip, although it is not restricted and its on you."
+    },
+    {
+        "question":"Will alcohol be served?",
+        "answer":"No, alcohol will not be served on the trip, although it is not restricted and its on you."
+    },
+    {
+        "question":"Can I board/deboard the bus from Chandigarh instead of Delhi?",
+        "answer":"Yes, in both the cases, Boarding & Deboarding are allowed from Chandigarh/Delhi."
+    },
+    {
+        "question":"If I board the bus from Chandigarh will I get a discounted price?",
+        "answer":"No, one will not get a discount in such a case."
+    },
+    {
+        "question":"What is the type of travelling bus?",
+        "answer":"It will be FULL AC-Semi Sleeper Volvo bus."
+    },
+    {
+        "question":"Is lunch included in the package?",
+        "answer":"Only Breakfast and Dinner are included with the package, Lunch will not be served to anyone."
+    },
+    {
+        "question":"Is lunch included in the package?",
+        "answer":"Only Breakfast and Dinner are included with the package, Lunch will not be served to anyone."
+    },
+    {
+        "question":"Is there any faculty going to accompany us?",
+        "answer":"No."
+    },
+    {
+        "question":"How many people will be sharing a single room?",
+        "answer":"Room sharing on a Quad-Sharing bases."
+    },
+    {
+        "question":"How many people will be sharing a single room?",
+        "answer":"Room sharing on a Quad-Sharing bases."
     }
-    
 ]
     
